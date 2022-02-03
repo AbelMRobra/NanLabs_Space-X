@@ -25,7 +25,7 @@ async function service_api(){
 
 function validate_response(response, status){
     if (status >= 200 && status <300){
-        swal("Good job!", "You send the card!", "success");
+        swal("Good job!", "You sent the card!", "success");
    
     } else {
         console.log(response)
