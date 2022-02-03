@@ -13,3 +13,5 @@ https://trello.com/b/96zEZnEx/space-x
 - You have to complete the form and send de information
 - Your request is processed for a Lambda function in AWS (this code is in Python)
 - It's all!, Enjoy the bridge
+
+** The file with TOKEN and KEYS is not available
