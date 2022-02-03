@@ -15,6 +15,41 @@ body{
 	color: #353344;
 	background-color: #F5F5F5;
 }
+h4{
+	color: #F5F5F5;
+}
+label{
+	color: #F5F5F5;
+}
+
+input {
+	width: 80%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+
+select {
+	width: 90%;
+	padding: 16px 20px;
+	border: none;
+	border-radius: 4px;
+	background-color: #f1f1f1;
+}
+
+textarea {
+
+	width: 90%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+}
+
 #content{
 	width: 100%;
 	margin: 0 auto;
@@ -34,12 +69,15 @@ body{
 	margin: 15px 0px 15px 0px;
 }
 #formContent{
+	position: relative;
 	width: 100%;
 	justify-content: center;
 	text-align: center;
 }
 #form{
 	width: 300px;
+	height: 50vh;
+	display: inline-block;
 	background-color: #8737AA;
 	border-radius: 25px;
 }
