@@ -1,14 +1,21 @@
 import requests
 from variables import KEY, TOKEN
 
-def main(event, context):
+def trello(event):
     key = KEY
     token = TOKEN
     name = event['name']
     desc = event['desc']
-    name = event['name']
 
-    id_list = '61fbeb68e1d100417ca760a6'
+    if event['list'] == 'task':
+        id_list = '61fbeb68e1d100417ca760a6'
+
+    if event['list'] == 'bug':
+        id_list = '61fbf10b130b6388f6ad7361'
+
+    if event['list'] == 'issue':
+        id_list = '61fbf46d8053b619566baa54'
+
     request_type = 'POST'
     url = "https://api.trello.com/1/cards"
     headers = {"Accept": "application/json"}
@@ -23,9 +30,3 @@ def main(event, context):
     
     return message
 
-# event = {
-#     'name': 'Lu',
-#     'desc': 'Prueba'
-# }
-
-# main(event, "")

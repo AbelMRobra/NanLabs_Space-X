@@ -24,30 +24,30 @@
         <div id="formContent">
 
             <div id="form">
-                <h4>Complete el formulario</h4>
+                <h4>Complete the form</h4>
 
                 <div>
 
-                    <select>
-                        <option>Task</option>
-                        <option>Bug</option>
-                        <option>Issue</option>
+                    <select id="list">
+                        <option value="task">Task</option>
+                        <option value="bug">Bug</option>
+                        <option value="issue">Issue</option>
                     </select>
 
                     <label>Name</label>
                     
-                    <input type="text">
+                    <input id="name" type="text">
 
                     <label>Description</label>
                     
-                    <textarea></textarea>
+                    <textarea id="desc"></textarea>
 
 
                 </div>
 
                 <div id="buttonContent">
 
-                    <button>
+                    <button onclick="service_api()">
                         <div class="svg-wrapper-1">
                           <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -72,8 +72,7 @@
         </div>
 
     </div>
-    
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/functions.js"></script>
 </body>
 </html>
