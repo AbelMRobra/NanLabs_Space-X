@@ -9,9 +9,10 @@ https://trello.com/b/96zEZnEx/space-x
 
 ### How this app works?
 
-- This app has a little template, thaks to Github for rendering it
+- This app has a little template (thaks to Github for rendering it)
 - You have to complete the form and send de information
-- Your request is processed for a Lambda function in AWS (this code is in Python)
+- Your request is processed for a function in an endpoint builded with FastApi
 - It's all!, Enjoy the bridge
 
-** The file with TOKEN and KEYS is not available
+Endpoint:
+https://spacexmanager.herokuapp.com/docs
