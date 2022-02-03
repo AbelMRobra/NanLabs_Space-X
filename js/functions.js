@@ -1,6 +1,6 @@
 
 async function service_api(){
-    host = 'http://127.0.0.1:8000'
+    host = 'https://spacexmanager.herokuapp.com'
     const url = `${host}/cards`
 
     var response = await fetch(url ,{
