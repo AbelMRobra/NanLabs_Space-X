@@ -14,4 +14,5 @@ https://trello.com/b/96zEZnEx/space-x
 - Your request is processed for a function in an endpoint builded with FastApi
 - It's all!, Enjoy the bridge
 
-** The file with TOKEN and KEYS is not available
+Endpoint:
+https://spacexmanager.herokuapp.com/docs
