@@ -56,6 +56,10 @@ textarea {
 	border: 2px solid #8737AA;
 }
 
+#trello{
+	height: 20px;
+}
+
 #content{
 	width: 100%;
 	margin: 0 auto;
