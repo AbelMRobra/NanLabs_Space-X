@@ -16,3 +16,6 @@ https://trello.com/b/96zEZnEx/space-x
 
 Endpoint:
 https://spacexmanager.herokuapp.com/docs
+
+## Warning
+Heroku goes into idle state after a while, first check out the endpoint
