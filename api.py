@@ -22,6 +22,9 @@ class Card(BaseModel):
     name: str
     desc: str
 
+@app.get("/")
+async def test():
+    return "I'm ready!"
 
 @app.post("/cards")
 async def create_card(request: Card, status_code=201):
