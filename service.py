@@ -1,5 +1,25 @@
 import requests
+import json
 from variables import KEY, TOKEN
+
+def get_list():
+    key = KEY
+    token = TOKEN
+    headers = {"Accept": "application/json"}
+    id_board = "61fbd5b7c5ba827c61818ed3"
+    url = f"https://api.trello.com/1/boards/{id_board}/lists"
+    query = {'key':key, 'token':token}
+
+    responseTrello = requests.request("GET", url, headers=headers, params=query)
+
+    response = {}
+
+    responseData = json.loads(responseTrello.text)
+    for data in responseData:
+        response[data['name']] = data['id']
+
+    return response
+
 
 def trello(event):
     key = KEY

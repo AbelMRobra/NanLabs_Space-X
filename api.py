@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from service import trello
+from service import trello, get_list
 
 
 app = FastAPI(title='Space-X Api', description='API - Trello')
@@ -25,6 +25,12 @@ class Card(BaseModel):
 @app.get("/")
 async def test():
     return "I'm ready!"
+
+@app.get("/list")
+async def list():
+
+    response = get_list()
+    return response
 
 @app.post("/cards")
 async def create_card(request: Card, status_code=201):
