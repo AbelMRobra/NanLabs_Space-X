@@ -15,6 +15,9 @@ body{
 	color: #353344;
 	background-color: #F5F5F5;
 }
+h2{
+	color: #F5F5F5;
+}
 h4{
 	color: #F5F5F5;
 }
@@ -164,12 +167,3 @@ button {
 	 transform: translateY(-0.1em);
 	}
    }
-   
-   
-
-
-
-
-
-
-
