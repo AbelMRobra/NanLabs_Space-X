@@ -1,8 +1,7 @@
 # NanLabs_Space-X
 A bridge between Trello and the management 🚀
 
-%%html
-<a href="your_url_here">Showing Text</a>
+This is my solution for the <a href="https://doc.clickup.com/p/h/e12h-16043/f3e54f9ffd37f57">exercise</a>
 
 For test the app you have to send a task for this URL:
 https://abelmrobra.github.io/NanLabs_Space-X/
