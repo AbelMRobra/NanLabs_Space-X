@@ -50,6 +50,14 @@ async function service_api(){
 
 function validate_lists(response, status){
     if (status >= 200 && status <300){
+        var list = document.getElementById('list');
+ 
+        for (var key in response) {
+            var option = document.createElement("option");
+            option.value = response[key]
+            option.innerHTML = key
+            list.appendChild(option)
+        }
         console.log(response);
    
     } else {

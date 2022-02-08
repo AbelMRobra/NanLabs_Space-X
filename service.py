@@ -16,7 +16,7 @@ def get_list():
 
     responseData = json.loads(responseTrello.text)
     for data in responseData:
-        response[data['name']] = data['id']
+        response[str(data['name']).capitalize()] = data['id']
 
     return response
 
@@ -26,15 +26,7 @@ def trello(event):
     token = TOKEN
     name = event['name']
     desc = event['desc']
-
-    if event['list'] == 'task':
-        id_list = '61fbeb68e1d100417ca760a6'
-
-    if event['list'] == 'bug':
-        id_list = '61fbf10b130b6388f6ad7361'
-
-    if event['list'] == 'issue':
-        id_list = '61fbf46d8053b619566baa54'
+    id_list = event['list']
 
     request_type = 'POST'
     url = "https://api.trello.com/1/cards"
